@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Salón de Belleza - Agendar Cita</title>
+</head>
+<body>
+    <h1>Salón de Belleza "Estilo & Arte"</h1>
+    <h2>Agendar Cita</h2>
+
+    <!-- Formulario configurado con método POST dirigido a la ruta del Servlet -->
+    <form action="agendar-cita" method="POST">
+        <div>
+            <label for="nombreCliente">Nombre del Cliente:</label><br>
+            <input type="text" id="nombreCliente" name="nombreCliente" required>
+        </div>
+        <br>
+        <div>
+            <label for="servicio">Servicio Solicitado:</label><br>
+            <select id="servicio" name="servicio" required>
+                <option value="Corte de Cabello">Corte de Cabello</option>
+                <option value="Manicure & Pedicure">Manicure & Pedicure</option>
+                <option value="Tinte y Tratamiento Capilar">Tinte y Tratamiento Capilar</option>
+                <option value="Maquillaje Social">Maquillaje Social</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="fecha">Fecha de la Cita:</label><br>
+            <input type="date" id="fecha" name="fecha" required>
+        </div>
+        <br>
+        <div>
+            <label for="hora">Hora:</label><br>
+            <input type="time" id="hora" name="hora" required>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Confirmar Cita</button>
+        </div>
+    </form>
+</body>
+</html>
